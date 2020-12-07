@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商城</title>
+    <style>
+        .father{
+          border: 2px solid blue;  
+          width: 200px;    
+        }
+        .father .son{
+          width: 100px;
+          height: 100px;
+          background: red;
+          float: left;
+        }
+        .clearfix{
+            content: "";
+            clear: both;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="father" style="clear: both;">
+        <div class="son"></div>
+    </div>
 </body>
 </html>
